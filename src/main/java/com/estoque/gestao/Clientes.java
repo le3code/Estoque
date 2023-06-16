@@ -5,6 +5,7 @@ import java.util.function.ToDoubleBiFunction;
 public class Clientes extends Endereco {
     
     private int id_cliente;
+    private String nomePresidente;
     private String nomeFantasia;
     private String razaoSocial;
     private String cnpj;
@@ -13,11 +14,12 @@ public class Clientes extends Endereco {
 
 
     public Clientes() {super();}
-    public Clientes(int id_cliente, String nomeFantasia, String razaoSocial, 
+    public Clientes(int id_cliente, String nomePresidente, String nomeFantasia, String razaoSocial, 
                     String cnpj, Endereco endereco,
                     String data) {
         super();               
         this.id_cliente = id_cliente;
+        this.nomePresidente = nomePresidente;
         this.nomeFantasia = nomeFantasia;
         this.razaoSocial = razaoSocial;
         this.cnpj = cnpj;
@@ -26,6 +28,14 @@ public class Clientes extends Endereco {
 
     }
 
+
+    public String getNomePresidente() {
+        return nomePresidente;
+    }
+
+    public void setNomePresidente(String nomePresidente) {
+        this.nomePresidente = nomePresidente;
+    }
 
     public int getId_cliente() {
         return id_cliente;
